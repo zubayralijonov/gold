@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <div class="card text-bg-dark">
+        <img src="{% static 'main/ring3.JPG' %}" class="card-img" style="width: 100%; height: 100vh; object-fit: cover;" alt="...">
+        <div class="card-img-overlay">
+        <a class="card-title fs-1 font-monospace d-flex justify-content-center mt-5 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{% url 'gold_ring_page' %}">Gold Ring</a>
+     
+        </div>
+      </div>
+      <div class="card text-bg-dark">
+        <img src="{% static 'main/fit5.JPG' %}" class="card-img" alt="...">
+        <div class="card-img-overlay">
+        <a class="card-title fs-1 font-monospace d-flex justify-content-center mt-5 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{% url 'gold_set_page' %}">Gold Set</a>
+        </div>
+      </div>
+      <div class="card text-bg-dark">
+        <img src="{% static 'gold_braslet/braslet1.JPG' %}" class="card-img"  alt="...">
+        <div class="card-img-overlay">
+        <a class="card-title fs-1 font-monospace d-flex justify-content-center mt-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{% url 'gold_braslet_page' %}">Gold Braslet</a>
+        </div>
+      </div>
+</body>
+</html>
